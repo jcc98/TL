@@ -1,0 +1,468 @@
+$primary-color: #d9e4dd;
+$sec-color: #cdc9c3;
+$third-color: #fbf7f0;
+$fourth-color: #555555;
+
+
+*{
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    & a {
+      text-decoration: none;
+    }
+    ::selection {
+      background: $primary-color;
+    }
+
+}
+
+.containerC {
+    background-color: #232323;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    z-index: 100;
+    background-color: rgba(251, 247, 240, .4);
+
+}
+
+.logo {
+    width: 300px;
+}
+
+
+.info ul {
+  display: flex;
+
+
+    & li {
+        width: 6rem;
+    }
+
+    & a {
+        color: $fourth-color;
+        font-weight: bolder;
+        font-size: 20px;
+        color: rgb(26, 11, 11);
+
+
+        &:hover {
+            opacity: .8;
+            transition: .2s all;
+            text-decoration: underline;
+        }
+    
+    }
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .info ul {
+    list-style-type: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+nav .info ul li {
+  padding: 0 1rem;
+}
+
+hr {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 2px;
+  background: red;
+}
+
+.about {
+    height: 100vh;
+    text-align: center;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    & h2 {
+      font-size: 85px;
+      color: $fourth-color;
+    }
+  
+}
+
+.about p {
+    margin: 0 auto;
+    width: 700px;
+    color: $fourth-color;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px $sec-color;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5rem;
+    
+}
+
+.main-page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("mainpage.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+.main-center {
+    user-select: none;
+    text-align: center;
+    font-size: 60px;
+    color: $third-color;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h4 {
+        font-size: 100px;
+        color: $primary-color;
+        font-family: 'Redressed', cursive;
+      }
+
+    & h3 {
+      font-size: 35px;
+    }
+}
+
+#about {
+  // height: 100vh;
+}
+
+.portfolio {
+    overflow: hidden;
+
+    & a:hover {
+      opacity: .8;
+      transition: all .2s;
+    }
+
+    & .txt {
+      width: 100%;
+      color: $sec-color;
+    }
+}
+
+.yokai {
+    border-radius: 50%;
+    padding-bottom: 30px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.card a {
+
+        color: $fourth-color;
+        font-weight: bolder;
+        margin: 20px 0;
+
+    
+}
+
+.portfolio {
+  background-color: $third-color;
+}
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 70px;
+    color: $third-color;
+    letter-spacing: 4px;
+
+    
+}
+
+.contact {
+  background-color: $sec-color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: $third-color;
+
+  & h1 {
+    color: $sec-color;
+    font-size: 70px;
+  }
+
+  & p {
+    font-size: 35px;
+    color: $fourth-color;
+  }
+}
+
+.container-prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: $primary-color;
+
+  & h1 {
+    font-size: 85px;
+  }
+
+  & h2 {
+    font-size: 40px;
+  }
+
+  & h1, h2 {
+    color: $fourth-color;
+    font-weight: bolder;
+  }
+
+  & p {
+    font-size: 20px;
+    
+  }
+
+}
+
+.mail:hover {
+  background-color: #fff;
+}
+
+
+// CARD TEMPLATE
+
+$black: #282828;
+$point: $fourth-color;
+$point-light: lighten($point, 5%);
+
+$ratio: 0.7;
+$card_width: 250px;
+$card_height: $card_width * $ratio;
+$card_padding: 20px;
+$card-bgcolor: white;
+$card_margin: 5px;
+$card_round: 10px;
+$card-shadow: -10px -20px 0px 0px rgba(255, 255, 255, 0.877);
+
+$card-padding-basis: 15px;
+$card_head_padding: 0px 0px $card-padding-basis 0px;
+
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: $point;
+}
+
+.containercard{
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center{
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card{
+  background-color: $card-bgcolor;
+      overflow: hidden;
+
+  width: $card_width;
+  min-height: $card_height;
+  
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: $card_padding;
+  margin: $card_margin;
+  
+  -webkit-box-shadow: $card-shadow;
+  
+          box-shadow: $card-shadow;
+  border-radius: $card_round;
+  
+  -webkit-animation-name: shadow-show; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+  -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+  transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000); /* custom */
+
+
+  
+  h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: $card_head_padding;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    color: $fourth-color;
+    text-align: center;
+    text-shadow: 2px 2px 10px $sec-color;
+    
+  }
+
+
+  hr{
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: $point;
+    margin: 0px;
+    
+    -webkit-animation-name: line-show; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+    animation-name: line-show;
+    animation-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000); /* custom */
+  }
+  
+  p{
+    margin: $card-padding-basis 0px 0px 0px;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    line-height: 1.60;
+    font-size: 15px;
+    word-break: break-all;
+    word-wrap: pre-wrap;
+    color: $black;
+    font-family: 'Poppins', sans-serif;
+
+
+    
+    -webkit-animation-name: p-show; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-name: p-show;
+    animation-duration: 1.5s;
+  }
+  
+  button{
+    border: none;
+    background-color: $point;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+  }
+  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes line-show {
+  from {margin: 0px 100px;}
+  to {margin: 0px;}
+}
+
+/* Standard syntax */
+@keyframes line-show {
+  from {margin: 0px 100px;}
+  to {margin: 0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes p-show {
+  from {color: white;}
+  to {color: $black;}
+}
+
+/* Standard syntax */
+@keyframes p-show {
+  from {color: white;}
+  to {color: $black;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shadow-show {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    -webkit-box-shadow: $card-shadow;
+    box-shadow: $card-shadow;
+  }
+}
+
+/* Standard syntax */
+@keyframes shadow-show {
+  from {-webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;box-shadow: 0px 0px 0px 0px #e0e0e0;}
+  to {-webkit-box-shadow: $card-shadow;box-shadow: $card-shadow;}
+}
+ 
+@media only screen and (max-width:900px) {
+  .logo {
+    width: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0;
+
+  }
+
+  .about .container-about .container-desc {
+    & p{
+      width: 50%;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    & h2 {
+      font-size: 60px;
+    }
+  }
+
+}
