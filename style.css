@@ -456,6 +456,13 @@ body {
   .logo {
     width: 200px;
   }
+
+  .main-center h4 {
+    font-size: 50px;
+  }
+  .main-center h3 {
+    font-size: 25px;
+  }
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -463,13 +470,51 @@ body {
             flex-direction: column;
     padding: 0;
   }
+  .about .container-about {
+    padding: 0 20px;
+  }
   .about .container-about .container-desc p {
-    width: 50%;
+    
+    width: 100%;
     font-size: 17px;
     line-height: 1.6;
   }
   .about .container-about .container-desc h2 {
     font-size: 60px;
   }
+  .info ul a {
+    font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
+.contact h1 {
+  font-size: 40px;
+}
+
+.contact p {
+  font-size: 17px;
+}
+
+h1.txt {
+  font-size: 40px;
+}
+
+.container-about h2 {
+  font-size: 40px;
+}
+
+.container-prices {
+  padding: 0 10px;
+}
+
+.container-prices p {
+  font-size: 17px;
+}
+
+.container-prices h1 {
+  font-size: 40px;
+}
+.container-prices h2 {
+  font-size: 30px;
+}
+
+}
