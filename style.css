@@ -131,7 +131,7 @@ hr {
 .main-page {
   height: 100vh;
   width: 100vw;
-  background-image: url("mainpage.jpg");
+  background-image: url("img/mainpage.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
